@@ -127,6 +127,7 @@ a {
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
   padding: 0;
+  z-index: 9;
 }
 
 .mobile__nav-slide ul {
@@ -145,6 +146,42 @@ a {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+/* Slideshow */
+
+.slider img {
+  width: 100%;
+  height: 18rem;
+}
+
+.slider {
+  width: 100vw;
+  height: 18rem;
+  margin: 20px auto;
+  position: absolute;
+  top: 5.2rem;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  background: none;
+  font-size: 70px;
+  color: #ffae4d;
+  position: absolute;
+  top: 33%;
+  cursor: pointer;
+}
+
+/* Video Container */
+.video__container {
+  top: 20rem;
+}
+
+/* button appereance */
+.next {
+  margin-left: 89vw;
 }
 
 /* Kompetencer */
