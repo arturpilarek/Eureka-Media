@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-li {
+.home li {
   list-style: none;
   font-size: 1.25rem;
 }
@@ -293,11 +293,39 @@ a {
   height: auto;
 }
 
-/* Tidligere projekter */
-.projekter {
+/* Referencer */
+.referencer {
   background-color: #011f49;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
   color: white;
+}
+
+.referencer__wrapper {
+  display: flex;
+}
+
+.referencer__item-list li {
+  list-style-image: url(../assets/Icon\ awesome-check.png);
+}
+
+.referencer__item img {
+  width: 20rem;
+  height: auto;
+}
+
+.referencer__item h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.yummy-eats h3 {
+  background-color: #ffbd59;
 }
 
 /* Kontakt */
