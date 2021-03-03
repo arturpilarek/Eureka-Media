@@ -249,20 +249,48 @@ a {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: flex-end;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
 .kompetencer__list img {
-  width: 8rem;
+  width: 6.5rem;
   height: auto;
+}
+
+.kompetencer__list-underline {
+  height: 0.4rem;
+  width: 100%;
+  margin-top: 0.3rem;
+  background-color: white;
+}
+
+.kompetencer__paragraph {
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 85ch;
+}
+
+.kompetencer__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
 .kompetencer a {
   background-color: #ffbd59;
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 26px;
+  font-weight: 700;
+}
+
+.kompetencer__button-wrapper img {
+  width: 6rem;
+  height: auto;
 }
 
 /* Tidligere projekter */
@@ -348,5 +376,63 @@ a {
 @media screen and (max-width: 600px) {
   html {
     font-size: 8px;
+  }
+
+  .kompetencer__list {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 0.5fr;
+    width: 60%;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .kompetencer__list-item {
+    grid-column: span 2;
+  }
+
+  .kompetencer__list-item:last-child {
+    grid-column: 2 / span 2;
+  }
+
+  .kompetencer__list img {
+    width: 6.5rem;
+    height: auto;
+  }
+
+  .kompetencer__list-underline {
+    height: 0.4rem;
+    width: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3rem;
+    background-color: white;
+  }
+
+  .longer {
+    width: 13ch;
+  }
+
+  .kompetencer__paragraph {
+    font-size: 1.65rem;
+    width: 55ch;
+    text-align: center;
+  }
+
+  .kompetencer__button-wrapper img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .kompetencer a {
+    background-color: #ffbd59;
+    font-size: 2rem;
+    padding: 1.5rem 2.8rem;
+    border-radius: 26px;
+    font-weight: 700;
   }
 }
