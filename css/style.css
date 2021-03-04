@@ -390,8 +390,106 @@ a {
 
 .kontakt {
   background-color: #55407d;
-  text-align: center;
   color: white;
+}
+
+.kontakt__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.kontakt__wrapper article {
+  text-align: center;
+  background-color: #011f49;
+  padding: 4.6rem;
+  border-radius: 34px;
+}
+
+.kontakt__wrapper article h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.kontakt__logo-wrapper img {
+  display: none;
+}
+
+.kontakt__wrapper article p {
+  font-size: 1.1rem;
+}
+
+form {
+  width: 30rem;
+}
+
+form input {
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+}
+
+form input:last-child {
+  background-color: #ffbd59;
+  color: #011f49;
+  font-weight: 800;
+}
+
+form input:last-child:hover {
+  color: white;
+}
+form input:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #011f49;
+  width: 100vw;
+  height: 9rem;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.footer__wrapper img {
+  width: 6.5rem;
+  height: auto;
+}
+
+.footer__icons i {
+  font-size: 2rem;
+}
+
+.footer__icons i:not(:last-child) {
+  padding-right: 2rem;
+}
+
+.footer__link-start {
+  position: absolute;
+  right: 0;
+  background-color: #4c396f;
+  padding: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.footer__link-start i {
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -468,6 +566,87 @@ a {
 
   .referencer__item img {
     width: 19em;
+  }
+
+  .kontakt__wrapper {
+    transform: scale(1.15);
+  }
+
+  .kontakt__wrapper {
+    flex-direction: column;
+    height: 80%;
+    gap: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .kontakt__wrapper article {
+    background-color: #55407d;
+    padding: 0;
+  }
+
+  .kontakt__logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .kontakt__wrapper article h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .kontakt__logo-wrapper img {
+    display: block;
+    width: 6.5rem;
+  }
+
+  .kontakt__wrapper article p {
+    font-size: 2rem;
+  }
+
+  form {
+    width: 35rem;
+  }
+
+  form input {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  form input:not(:last-child) {
+    margin-bottom: 0.6rem;
+  }
+
+  footer {
+    height: 11rem;
+    font-size: 1.8rem;
+  }
+
+  .footer__icons i {
+    font-size: 2.5rem;
+  }
+
+  .footer__wrapper {
+    margin-right: 4.4rem;
+    margin-left: 4.4rem;
+  }
+
+  .footer__wrapper img {
+    display: none;
+  }
+
+  .footer__link-start {
+    padding: 1.1rem;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    margin-top: 0.4rem;
+  }
+
+  .footer__link-start i {
+    font-size: 1.6rem;
   }
 }
 

@@ -18,13 +18,13 @@
   <body>
     <div id="fullpage">
       <div class="section home">
-        <header>
+        <header id="home">
           <nav>
             <div class="desktop__nav">
               <div class="desktop__nav-left">
                 <ul>
                   <li><a href="#">Forside</a></li>
-                  <li><a href="#">Kompetencer</a></li>
+                  <li><a href="kompetencer.html">Kompetencer</a></li>
                   <li><a href="#">Blog</a></li>
                 </ul>
               </div>
@@ -56,7 +56,7 @@
                 <!--here add js class .active, style it normally -->
                 <ul>
                   <li><a href="#">Forside</a></li>
-                  <li><a href="#">Kompetencer</a></li>
+                  <li><a href="kompetencer.html">Kompetencer</a></li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Om os</a></li>
                   <li><a href="#">Kontakt</a></li>
@@ -204,36 +204,42 @@
       </div>
 
       <div class="section kontakt">
-        <section class="kontakt-wrapper">
+        <section class="kontakt__wrapper">
           <article>
-            <h2>Kontakt os</h2>
+            <div class="kontakt__logo-wrapper">
+              <h2>Kontakt os</h2>
+              <img
+                src="assets/logo.png"
+                alt="Et billede af Eureka Media logo"
+              />
+            </div>
             <p>
-              Kunne I tænke jer at høre mere om, hvad vi kan gøre for jer?
+              Kunne I tænke jer at høre mere om, <br />hvad vi kan gøre for jer?
               <br /><br />
-              Send os en besked eller ring på tlf.: XX XX XX XX
+              Send os en besked eller ring på tlf.: <br />XX XX XX XX
             </p>
           </article>
           <form>
-            <input type="text" placeholder="Name" required /><br />
+            <input type="text" placeholder="Navn" required /><br />
             <input type="email" placeholder="Email" required /><br />
             <input type="tel" placeholder="Mobil" required /><br />
             <input type="submit" value="Lad os drikke en kop kaffe" />
           </form>
-          <footer>
-            <div class="footer__wrapper">
-              <p>© 2021 Eureka-Media<br />Kolding Danmark</p>
-              <img src="assets/logo.png" alt="Logo af Eureka Media" />
-              <div class="footer__icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-behance"></i>
-              </div>
-            </div>
-            <div class="footer__link-start">
-              <i class="fas fa-chevron-up"></i>
-            </div>
-          </footer>
         </section>
+        <footer>
+          <a href="#section1" class="footer__link-start"
+            ><i class="fas fa-chevron-up"></i
+          ></a>
+          <div class="footer__wrapper">
+            <p>© 2021 Eureka-Media<br />Kolding Danmark</p>
+            <img src="assets/logo.png" alt="Logo af Eureka Media" />
+            <div class="footer__icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-behance"></i>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
@@ -243,7 +249,8 @@
       new fullpage("#fullpage", {
         //options here
         autoScrolling: true,
-        navigation: true, //ew do wyjebania, zapytaj sie innych
+        anchors: ["section1", "section2", "section3", "section4"],
+        // navigation: true, //ew do wyjebania, zapytaj sie innych
         // navigationTooltips: ["Home", "Kompetencer", "Projekter"], //ask
         // showActiveTooltip: true, //tooltips will be always visable
         // scrollingSpeed: 3000, //scrolling speed 1000=1sek
