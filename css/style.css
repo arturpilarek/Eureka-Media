@@ -7,6 +7,15 @@
   font-family: "Open Sans";
 }
 
+h2,
+span {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.16);
+}
+
+p {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.16);
+}
+
 .home {
   background-color: #011f49;
   display: flex;
@@ -66,25 +75,35 @@ a {
   color: white;
   display: flex;
   flex-direction: column;
-  width: 29.5em;
 }
 
-.logo h1,
-.logo span {
+.desktop__nav-middle {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.desktop__nav-middle img {
+  width: 5rem;
+  height: auto;
+}
+
+.logo__white,
+.logo__orange {
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 3.5rem;
-  line-height: 3rem;
+  font-size: 2.8rem;
+  line-height: 2.4rem;
 }
 
-.logo span {
+.logo__orange {
   color: #ffbd59;
 }
 
 .logo p {
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: end;
   color: #ffbd59;
   margin-left: 30px;
@@ -153,40 +172,56 @@ a {
   transform: translateX(0%);
 }
 
-/* Slideshow */
+/* Background */
 
-.slider img {
-  width: 100%;
-  height: 18rem;
-  object-fit: cover;
+.background__banner {
+  position: absolute;
+  top: 6.5rem;
+  width: 100vw;
+  height: calc(100vh - 6.5rem);
+  color: white;
+  background-image: url(../assets/baggrund.png);
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
-.slider {
-  width: 100vw;
-  height: 18rem;
-  margin: 20px auto;
+.background__text-position {
   position: absolute;
-  top: 5.2rem;
+  top: 7rem;
+  margin-left: 8rem;
+}
+
+.background__banner h2,
+.background__banner span {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.background__banner span {
+  color: #ffbd59;
 }
 
 /* Video Container */
 .video__container {
   position: absolute;
-  top: 26.7rem;
+  top: 24rem;
   height: 27rem; /* remember this to center absolute elements, left,right, both margins auto combo */
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-around;
   color: white;
 }
 
 .viedo__container-youtube {
-  width: 53.375rem;
+  width: 37rem;
   height: auto;
+  border-radius: 34px;
+  border: 0;
 }
 
 .video__container section {
@@ -194,22 +229,24 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: rgba(1, 31, 73, 0.4);
+  border-radius: 34px;
+  padding: 1.6em;
 }
 
-.video__container h2,
-.video__container span {
-  font-size: 2.2rem;
+.video__container h1 {
+  font-size: 1.8rem;
   padding-bottom: 1rem;
-  font-weight: 800;
-}
-
-.video__container span {
-  color: #ffbd59;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .video__container p {
-  font-size: 1.3rem;
-  max-width: 35ch;
+  font-size: 1.1rem;
+  width: calc(80ch - 15vw);
   line-height: 1.5em;
   font-weight: 500;
 }
@@ -217,12 +254,13 @@ a {
 .desktop__button,
 .mobile__button {
   background-color: #ffbd59;
+  color: #011f49;
   border-radius: 8px;
-  padding: 16px 32px;
-  font-weight: 700;
-  font-size: 1.55rem;
+  padding: 14px 40px;
+  font-weight: 800;
+  font-size: 1.3rem;
   margin-top: 1em;
-  margin-left: 6rem;
+  align-self: center;
 }
 
 .mobile__button {
@@ -398,6 +436,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 10rem;
 }
 
 .kontakt__wrapper article {
@@ -507,6 +546,42 @@ footer {
     font-size: 12px;
   }
 
+  .background__banner {
+    position: absolute;
+    top: 6.5rem;
+    width: 100vw;
+    height: calc(26vh - 6.5rem);
+    color: white;
+    background-image: url(../assets/baggrund.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  .background__text-position {
+    position: initial;
+    top: 0;
+    margin-left: 0;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .background__banner h2,
+  .background__banner span {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+  .background__banner span {
+    color: #ffbd59;
+  }
+
+  .background__banner p {
+  }
+
   .referencer__item img {
     width: 17em;
   }
@@ -576,7 +651,6 @@ footer {
     flex-direction: column;
     height: 80%;
     gap: 5rem;
-    margin-bottom: 10rem;
   }
 
   .kontakt__wrapper article {

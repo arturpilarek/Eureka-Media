@@ -23,14 +23,18 @@
             <div class="desktop__nav">
               <div class="desktop__nav-left">
                 <ul>
-                  <li><a href="#">Forside</a></li>
                   <li><a href="kompetencer.html">Kompetencer</a></li>
                   <li><a href="#">Blog</a></li>
                 </ul>
               </div>
-              <div class="desktop__nav-middle logo">
-                <h1>Eureka<span>Media</span></h1>
-                <p>We express your dreams!</p>
+              <div class="desktop__nav-middle">
+                <img src="assets/logo.png" alt="Billede af Eureka Media logo" />
+                <div class="logo">
+                  <span class="logo__white"
+                    >Eureka<span class="logo__orange">Media</span></span
+                  >
+                  <p>We express your dreams!</p>
+                </div>
               </div>
               <div class="desktop__nav-right">
                 <ul>
@@ -42,9 +46,17 @@
 
             <div class="mobile__nav">
               <div class="mobile__wrapper">
-                <div class="mobile__nav-middle logo">
-                  <h1>Eureka<span>Media</span></h1>
-                  <p>We express your dreams!</p>
+                <div class="desktop__nav-middle mobile__nav-middle">
+                  <img
+                    src="assets/logo.png"
+                    alt="Billede af Eureka Media logo"
+                  />
+                  <div class="logo">
+                    <span class="logo__white"
+                      >Eureka<span class="logo__orange">Media</span></span
+                    >
+                    <p>We express your dreams!</p>
+                  </div>
                 </div>
                 <div class="mobile__nav-burger">
                   <div class="line1"></div>
@@ -53,9 +65,7 @@
                 </div>
               </div>
               <div class="mobile__nav-slide">
-                <!--here add js class .active, style it normally -->
                 <ul>
-                  <li><a href="#">Forside</a></li>
                   <li><a href="kompetencer.html">Kompetencer</a></li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Om os</a></li>
@@ -65,40 +75,34 @@
             </div>
           </nav>
         </header>
-        <div class="slider">
-          <div id="box">
-            <img src="slide1.png" alt="First Slide" class="slide__img" />
+        <div class="background__banner">
+          <div class="background__text-position">
+            <h2><span>Follow the</span> White Rabbit...</h2>
+            <p>And let's help You unleash Your potential</p>
           </div>
-          <!--control buttons to the slideshow-->
-          <!-- <button class="prev button" onclick="prevImage()">
-            <i class="fas fa-caret-left"></i>
-          </button>
-          <button class="next button" onclick="nextImage()">
-            <i class="fas fa-caret-right"></i>
-          </button> -->
         </div>
         <div class="video__container">
           <section>
-            <h2><span>Follow the</span> white rabbit...</h2>
+            <h1>Kreativt digitalt bureau</h1>
             <p>
-              Eureka-media.dk er en international og multikulturel virksomhed,
-              der tager dig med på en rejse mod opfyldelsen af dit fulde
-              potentiale. <br />
-              Vi transformerer dine ønsker og følelser til kreative og
-              målrettede digitale løsninger. Vores mål er at skabe en bedre
-              relation og kommunikation mellem din danske virksomhed og dine
-              udenlandske kunder.
+              Eureka-media.dk er et internationalt og multikulturelt digitalt
+              bureau, der tager dig med på en rejse mod opfyldelsen af dit fulde
+              potentiale.
+              <br />
+              Vi omsætter dine ønsker og behov til kreative og målrettede
+              digitale løsninger. Vores mål er at skabe en bedre relation og
+              kommunikation mellem din danske virksomhed og dine udenlandske
+              kunder.
             </p>
-            <a href="#" class="desktop__button">Call to Action</a>
+            <a href="#" class="desktop__button">Kontakt os</a>
           </section>
           <iframe
             src="https://www.youtube.com/embed/JMy7YDF5eb0"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             class="viedo__container-youtube"
           ></iframe>
-          <a href="#" class="mobile__button">Call to Action</a>
+          <a href="#" class="mobile__button">Kontakt os</a>
         </div>
       </div>
 
