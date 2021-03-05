@@ -209,7 +209,7 @@ a {
 .video__container {
   position: absolute;
   top: 24rem;
-  height: 27rem; /* remember this to center absolute elements, left,right, both margins auto combo */
+  height: 27rem;
   width: 100vw;
   display: flex;
   flex-direction: row-reverse;
@@ -269,7 +269,7 @@ a {
 
 /* Kompetencer */
 .kompetencer {
-  background-color: #55407d;
+  background-color: #011f49;
   color: white;
 }
 
@@ -322,7 +322,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #011f49;
+  background-color: #55407d;
   border-radius: 16px;
   padding: 32px 16px;
   margin-bottom: auto;
@@ -355,7 +355,7 @@ a {
 
 /* Referencer */
 .referencer {
-  background-color: #011f49;
+  background-color: #55407d;
   color: white;
 }
 
@@ -427,7 +427,7 @@ a {
 /* Kontakt */
 
 .kontakt {
-  background-color: #55407d;
+  background-color: #011f49;
   color: white;
 }
 
@@ -441,7 +441,7 @@ a {
 
 .kontakt__wrapper article {
   text-align: center;
-  background-color: #011f49;
+  background-color: #55407d;
   padding: 4.6rem;
   border-radius: 34px;
 }
@@ -490,7 +490,7 @@ form input:not(:last-child) {
 footer {
   position: absolute;
   bottom: 0;
-  background-color: #011f49;
+  background-color: #55407d;
   width: 100vw;
   height: 9rem;
 }
@@ -520,7 +520,7 @@ footer {
 .footer__link-start {
   position: absolute;
   right: 0;
-  background-color: #4c396f;
+  background-color: #011f49;
   padding: 0.7rem;
   border-radius: 50%;
   margin-right: 0.4rem;
@@ -546,11 +546,29 @@ footer {
     font-size: 12px;
   }
 
+  .referencer__item img {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+
+  .desktop__nav {
+    display: none;
+  }
+
+  .mobile__nav {
+    display: flex;
+  }
+
   .background__banner {
     position: absolute;
     top: 6.5rem;
     width: 100vw;
-    height: calc(26vh - 6.5rem);
+    height: calc(28vh - 6.5rem);
     color: white;
     background-image: url(../assets/baggrund.png);
     background-position: center;
@@ -579,83 +597,131 @@ footer {
     color: #ffbd59;
   }
 
-  .background__banner p {
-  }
-
-  .referencer__item img {
-    width: 17em;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 10px;
-  }
-
-  .desktop__nav {
-    display: none;
-  }
-
-  .mobile__nav {
-    display: flex;
-  }
-
   .video__container {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    height: 100%;
+    justify-content: initial;
+    top: 27.9%;
+    height: 73vh;
+  }
+
+  /* .video__container {
+    position: absolute;
+    top: 24rem;
+    height: 27rem; 
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    color: white;
+  } */
+
+  .video__container h1 {
+    font-size: 2.3rem;
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* .video__container h1 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+  } */
+
+  .video__container section {
+    padding-left: 0;
+    width: 90vw;
+    background-color: #011f49;
+    border-radius: 0;
+    padding: 5rem 0;
+  }
+
+  /* .video__container section {
+    padding-left: 2.31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: rgba(1, 31, 73, 0.4);
+    border-radius: 34px;
+    padding: 1.6em;
+  } */
+
+  .viedo__container-youtube {
+    width: 90%;
+    height: 35%;
+    margin-bottom: 4rem;
+  }
+
+  /* .viedo__container-youtube {
+    width: 37rem;
+    height: auto;
+    border-radius: 34px;
+    border: 0;
+  } */
+
+  /* .desktop__button,
+.mobile__button {
+  background-color: #ffbd59;
+  color: #011f49;
+  border-radius: 8px;
+  padding: 14px 40px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-top: 1em;
+  align-self: center;
+}
+
+.mobile__button {
+  display: none;
+}  */
+
+  .mobile__button {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 2rem;
+    padding: 10px 30px;
   }
 
   .desktop__button {
     display: none;
   }
 
-  .video__container h2,
-  .video__container span {
-    font-size: 3rem;
-  }
-
-  .video__container section {
-    padding-left: 0;
-    width: 100%;
-  }
-
-  .viedo__container-youtube {
-    width: 100%;
-    height: 30%;
-  }
-
-  .mobile__button {
-    display: inline-block;
-    margin-top: 2rem;
-    margin-left: 0;
-  }
-
   .video__container p {
-    font-size: 2rem;
-    max-width: 50ch;
+    font-size: 1.7rem;
     line-height: 1.5em;
     font-weight: 500;
+    width: 100%;
   }
+
+  /* .video__container p {
+  font-size: 1.1rem;
+  width: calc(80ch - 15vw);
+  line-height: 1.5em;
+  font-weight: 500;
+} */
 
   .referencer__item img {
     width: 19em;
   }
 
   .kontakt__wrapper {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .kontakt__wrapper {
     flex-direction: column;
     height: 80%;
-    gap: 5rem;
+    gap: 1.4rem;
   }
 
   .kontakt__wrapper article {
     background-color: #55407d;
-    padding: 0;
+    padding: 2rem;
   }
 
   .kontakt__logo-wrapper {
@@ -668,7 +734,7 @@ footer {
 
   .kontakt__wrapper article h2 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 0;
   }
 
