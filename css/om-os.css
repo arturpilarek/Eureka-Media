@@ -174,7 +174,7 @@ a {
 /* Background */
 
 .background__banner {
-  background-image: url(../assets/kompetencer_faldskærm.PNG);
+  background-image: url(../assets/followthewhiterabbit.png);
   width: 100vw;
   height: 30vh;
   background-position: center;
@@ -183,6 +183,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 2em;
 }
 
 .background__banner h1 {
@@ -191,32 +192,6 @@ a {
   font-weight: 800;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
-}
-
-.kompetencer__list {
-  display: flex;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2rem;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  font-weight: 700;
-  font-size: 1.4rem;
-  text-align: center;
-  margin-bottom: 2em;
-}
-
-.kompetencer__list img {
-  height: 4.5rem;
-  width: auto;
-}
-
-.kompetencer__list-underline {
-  height: 0.4rem;
-  width: 100%;
-  margin-top: 0.3rem;
-  background-color: white;
 }
 
 .kompetencer-cards {
@@ -427,52 +402,5 @@ footer {
 @media screen and (max-width: 600px) {
   html {
     font-size: 8px;
-  }
-
-  .kompetencer__list {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 0.5fr;
-    width: 60%;
-    font-weight: 700;
-    font-size: 1.7rem;
-    text-align: center;
-  }
-
-  .kompetencer__list-item {
-    grid-column: span 2;
-  }
-
-  .kompetencer__list-item:last-child {
-    grid-column: 2 / span 2;
-  }
-
-  .kompetencer__list img {
-    width: 6.5rem;
-    height: auto;
-  }
-
-  .kompetencer__list-underline {
-    height: 0.4rem;
-    width: 6.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.3rem;
-    background-color: white;
-  }
-
-  .longer {
-    width: 13ch;
-  }
-
-  .kompetencer__paragraph {
-    font-size: 1.65rem;
-    width: 45ch;
-    top: 53.7%;
-    text-align: center;
-    padding: 28px 12px;
   }
 }
