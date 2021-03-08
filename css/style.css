@@ -135,7 +135,6 @@ a {
   grid-column-start: 3;
   grid-column-end: 4;
   justify-self: end;
-  margin-right: 0.5rem;
   z-index: 10;
 }
 
@@ -170,6 +169,20 @@ a {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.underline:hover::after {
+  width: 100%;
+  transition: 0.3s;
 }
 
 /* Background */
@@ -562,6 +575,8 @@ footer {
 
   .mobile__nav {
     display: flex;
+    padding-right: 2em;
+    padding-left: 2em;
   }
 
   .background__banner {

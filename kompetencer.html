@@ -19,8 +19,10 @@
         <div class="desktop__nav">
           <div class="desktop__nav-left">
             <ul>
-              <li><a href="kompetencer.html">Kompetencer</a></li>
-              <li><a href="#">Blog</a></li>
+              <li>
+                <a href="kompetencer.html" class="underline">Kompetencer</a>
+              </li>
+              <li><a href="#" class="underline">Blog</a></li>
             </ul>
           </div>
           <a class="desktop__nav-middle" href="index.html">
@@ -34,8 +36,8 @@
           </a>
           <div class="desktop__nav-right">
             <ul>
-              <li><a href="om-os.html">Om os</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="om-os.html" class="underline">Om os</a></li>
+              <li><a href="kontakt.html" class="underline">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -61,10 +63,12 @@
           </div>
           <div class="mobile__nav-slide">
             <ul>
-              <li><a href="kompetencer.html">Kompetencer</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="om-os.html">Om os</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li>
+                <a href="kompetencer.html" class="underline">Kompetencer</a>
+              </li>
+              <li><a href="#" class="underline">Blog</a></li>
+              <li><a href="om-os.html" class="underline">Om os</a></li>
+              <li><a href="kontakt.html" class="underline">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -76,42 +80,67 @@
       </div>
     </div>
     <main>
+      <div class="kompetencer__intro">
+        <p>Har du et ønske om at virksomheden kommer ud på det internationale marked? <br><br>
+          Vores spidskompetencer er branding, herunder webdesign, grafisk design, programmering videoproduktion og animation, samt projektstyring og tekstforfatning på Dansk, Engelsk, Polsk og Tysk. </p>
+      </div>
       <div class="kompetencer__list">
-        <div class="kompetencer__list-item">
-          <img
-            src="assets/webudvikling.png"
-            alt="Et billede af minihjemmeside"
-          />
-          <p>Web<br />Design</p>
-          <div class="kompetencer__list-underline"></div>
-        </div>
+        <a href="#programming" class="kompetencer__list-item">
+          <div>
+            <img
+              src="assets/webudvikling.png"
+              alt="Et billede af minihjemmeside"
+            />
+            <p>Web<br />Design</p>
+            <div class="kompetencer__list-underline"></div>
+          </div>
+        </a>
 
-        <div class="kompetencer__list-item">
-          <img src="assets/brush.png" alt="Et billede af malebørste" />
-          <p>Grafisk<br />Design</p>
-          <div class="kompetencer__list-underline"></div>
-        </div>
+        <a href="#design" class="kompetencer__list-item">
+          <div>
+            <img src="assets/brush.png" alt="Et billede af malebørste" />
+            <p>Grafisk<br />Design</p>
+            <div class="kompetencer__list-underline"></div>
+          </div>
+        </a>
 
-        <div class="kompetencer__list-item">
+        <a href="#video" class="kompetencer__list-item">
+        <div>
           <img src="assets/camera.png" alt="Et billede af kamera" />
           <p>Video og<br />Animation</p>
           <div class="kompetencer__list-underline"></div>
         </div>
+      </a>
 
-        <div class="kompetencer__list-item">
+        <a href="#projekt-styring" class="kompetencer__list-item">
+        <div>
           <img src="assets/people.png" alt="Et billede af mennesker" />
           <p>Projekt<br />Styring</p>
           <div class="kompetencer__list-underline"></div>
         </div>
+      </a>
 
-        <div class="kompetencer__list-item">
+        <a href="#international" class="kompetencer__list-item">
+        <div>
           <img src="assets/globe.png" alt="Et billede af klode" />
           <p>Dansk, Engelsk<br />Tysk og Polsk</p>
           <div class="kompetencer__list-underline longer"></div>
         </div>
       </div>
+    </a>
       <div class="kompetencer-cards">
-        <article class="kompetencer-card card">
+        <article class="kompetencer-card card" id="international">
+          <img src="assets/flere-sprog.png" alt="Et billede af fugler" />
+          <div class="card-wrapper">
+            <h2>Vi taler flere sprog</h2>
+            <p>Vil I være sikre på at jeres budskab når frem?</p>
+            <p>
+              I Eureka-media har taler vi Dansk, Engelsk, Tysk og Polsk. Så har
+              du sikkerhed for at dit budskab ikke bliver ”lost in translation”.
+            </p>
+          </div>
+        </article>
+        <article class="kompetencer-card card" id="design">
           <img
             src="assets/branding-design.png"
             alt="Et billede af mand, der tegner wireframes"
@@ -131,7 +160,7 @@
             </p>
           </div>
         </article>
-        <article class="kompetencer-card card">
+        <article class="kompetencer-card card" id="programming">
           <img
             src="assets/programmering.png"
             alt="Et billede af mand, der programmerer"
@@ -147,7 +176,7 @@
             </p>
           </div>
         </article>
-        <article class="kompetencer-card card">
+        <article class="kompetencer-card card" id="video">
           <img
             src="assets/video-animation.png"
             alt="Et billede af mand med camera"
@@ -164,7 +193,7 @@
             </p>
           </div>
         </article>
-        <article class="kompetencer-card card">
+        <article class="kompetencer-card card" id="projekt-styring">
           <img
             src="assets/projektstyring.png"
             alt="Et billede af mennesker, der arbejder sammen"
@@ -177,17 +206,6 @@
               hvad det vil sige at lægge en plan, hvor der er plads til
               justeringer, så deadlines overholdes. Afhængig af din projektmodel
               tilpasser vi os, så I trygt kan stole på, at vi leverer til tiden.
-            </p>
-          </div>
-        </article>
-        <article class="kompetencer-card card">
-          <img src="assets/flere-sprog.png" alt="Et billede af fugler" />
-          <div class="card-wrapper">
-            <h2>Vi taler flere sprog</h2>
-            <p>Vil I være sikre på at jeres budskab når frem?</p>
-            <p>
-              I Eureka-media har taler vi Dansk, Engelsk, Tysk og Polsk. Så har
-              du sikkerhed for at dit budskab ikke bliver ”lost in translation”.
             </p>
           </div>
         </article>

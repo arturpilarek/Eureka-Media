@@ -45,6 +45,14 @@
   border-radius: 30px;
 }
 
+.card__special ul,
+.card__special p:not(:first-of-type) {
+  font-size: calc(0.7rem + 0.6vw);
+  padding-top: 1em;
+  letter-spacing: 0.05em;
+  line-height: 1.6em;
+}
+
 .card h2 {
   font-size: 2.3rem;
   font-family: "Poppins";
@@ -80,6 +88,10 @@
   padding: 1rem 3rem;
   font-size: 2rem;
   font-weight: 800;
+}
+
+.kontakt-os__button:hover {
+  color: white;
 }
 
 @media screen and (max-width: 1200px) {

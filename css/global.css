@@ -70,6 +70,20 @@ a {
   margin-right: 2em;
 }
 
+.underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.underline:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
 .logo {
   color: white;
   display: flex;
@@ -243,6 +257,8 @@ footer {
 
   .mobile__nav {
     display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   footer {
