@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eureka Media</title>
-    <link rel="stylesheet" href="css/om-os.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/kontakt.css" />
     <link rel="icon" type="assets/ico" href="assets/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/af4e7a822b.js"
@@ -14,7 +15,7 @@
   </head>
   <body>
     <header id="home">
-      <nav>
+      <nav id="nav">
         <div class="desktop__nav">
           <div class="desktop__nav-left">
             <ul>
@@ -33,7 +34,7 @@
           </a>
           <div class="desktop__nav-right">
             <ul>
-              <li><a href="#">Om os</a></li>
+              <li><a href="om-os.html">Om os</a></li>
               <li><a href="#">Kontakt</a></li>
             </ul>
           </div>
@@ -41,15 +42,17 @@
 
         <div class="mobile__nav">
           <div class="mobile__wrapper">
-            <div class="desktop__nav-middle mobile__nav-middle">
-              <img src="assets/logo.png" alt="Billede af Eureka Media logo" />
-              <div class="logo">
-                <span class="logo__white"
-                  >Eureka<span class="logo__orange">Media</span></span
-                >
-                <p>We express your dreams!</p>
+            <a class="desktop__nav-middle" href="index.html"
+              ><div class="desktop__nav-middle mobile__nav-middle">
+                <img src="assets/logo.png" alt="Billede af Eureka Media logo" />
+                <div class="logo">
+                  <span class="logo__white"
+                    >Eureka<span class="logo__orange">Media</span></span
+                  >
+                  <p>We express your dreams!</p>
+                </div>
               </div>
-            </div>
+            </a>
             <div class="mobile__nav-burger">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -60,7 +63,7 @@
             <ul>
               <li><a href="kompetencer.html">Kompetencer</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Om os</a></li>
+              <li><a href="om-os.html">Om os</a></li>
               <li><a href="#">Kontakt</a></li>
             </ul>
           </div>
@@ -69,11 +72,17 @@
     </header>
     <div class="background__banner">
       <div class="background__text-position">
-        <h1>Vi er</h1>
+        <h1>Kontakt os</h1>
       </div>
     </div>
     <main>
       <section class="map-adress__wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.539561994748!2d9.480191115983853!3d55.4881225198417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9f64001c7d87%3A0x7e94bdb5c43123ff!2sIBA%20Erhvervsakademi%20Kolding!5e0!3m2!1sda!2sdk!4v1615135211245!5m2!1sda!2sdk"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
         <div class="adress">
           <h2>EurekaMedia ApS</h2>
           <p>
@@ -82,14 +91,6 @@
             >
           </p>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.539561994748!2d9.480191115983853!3d55.4881225198417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9f64001c7d87%3A0x7e94bdb5c43123ff!2sIBA%20Erhvervsakademi%20Kolding!5e0!3m2!1sda!2sdk!4v1615135211245!5m2!1sda!2sdk"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
       </section>
       <section class="kontakt-form__wrapper">
         <div class="kontakt">
@@ -100,10 +101,16 @@
             Send os en besked eller ring på tlf.: XX XX XX XX
           </p>
         </div>
+        <form>
+          <input type="text" placeholder="Navn" required /><br />
+          <input type="email" placeholder="Email" required /><br />
+          <input type="tel" placeholder="Mobil" required /><br />
+          <input type="submit" value="Lad os drikke en kop kaffe" />
+        </form>
       </section>
     </main>
     <footer>
-      <a href="#section1" class="footer__link-start"
+      <a href="#nav" class="footer__link-start"
         ><i class="fas fa-chevron-up"></i
       ></a>
       <div class="footer__wrapper">

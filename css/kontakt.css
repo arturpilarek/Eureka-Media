@@ -1,0 +1,184 @@
+/* Background */
+
+.background__banner {
+  background-image: url(../assets/followthewhiterabbit.png);
+  width: 100vw;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2em;
+}
+
+.background__banner h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins";
+  font-weight: 800;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+/* Kontakt Section */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  margin-bottom: 2em;
+}
+
+.map-adress__wrapper,
+.kontakt-form__wrapper {
+  display: flex;
+  width: 100%;
+  flex-basis: 300px;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  gap: 3em;
+}
+
+.adress {
+  text-align: start;
+}
+
+.kontakt h2 {
+  line-height: 4em;
+}
+
+.adress {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main p {
+  font-size: 1.4rem;
+}
+
+.map-adress__wrapper iframe {
+  border-radius: 34px;
+}
+
+.adress,
+.kontakt {
+  background-color: #55407d;
+  border-radius: 34px;
+  padding: 2em;
+}
+
+.adress,
+.kontakt,
+form,
+.map-adress__wrapper iframe {
+  width: 30%;
+  height: auto;
+}
+
+form input {
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+}
+
+form input:last-child {
+  background-color: #ffbd59;
+  color: #011f49;
+  font-weight: 800;
+}
+
+form input:last-child:hover {
+  color: white;
+}
+form input:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .adress,
+  .kontakt,
+  form,
+  .map-adress__wrapper iframe {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+
+  main {
+    display: block;
+  }
+
+  .map-adress__wrapper,
+  .kontakt-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .adress {
+    order: -1;
+  }
+
+  .adress,
+  .kontakt,
+  form,
+  .map-adress__wrapper iframe {
+    width: 70%;
+    height: auto;
+  }
+
+  .map-adress__wrapper iframe {
+    height: 30rem;
+  }
+
+  .adress,
+  .kontakt,
+  .map-adress__wrapper iframe {
+    margin-bottom: 2em;
+  }
+
+  form input {
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+
+  form input:not(:last-child) {
+    margin-bottom: 0.43rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
